@@ -1,0 +1,39 @@
+Password Generator — README
+
+Overview
+
+This program creates secure, customizable passwords based on user preferences. It allows the user to specify the minimum password length and choose whether to include numbers and special characters. The generator ensures that all selected requirements are met before producing the final password.
+
+Features
+
+Customizable minimum password length
+
+Optional inclusion of numbers
+
+Optional inclusion of special characters
+
+Ensures all required character types are present
+
+Uses only Python’s built-in random and string modules
+
+How It Works
+
+The script begins by asking the user for the minimum length of the password and whether numbers and special characters should be included. Based on these selections, the generator creates a pool of allowed characters. It then builds the password one character at a time, checking whether it meets all selected criteria. The process continues until the password satisfies both the minimum length requirement and any optional character-type requirements.
+
+Function Details
+
+The generate_password function receives the user’s choices and constructs the password according to the defined rules. It tracks whether the generated characters include digits or special characters when required. Once all conditions are met, the function returns the completed password.
+
+Requirements
+
+Python 3.x
+
+No external libraries required
+
+How to Run
+
+Run the script in a Python environment and follow the prompts. The program will display the generated password once all requirements are met.
+
+Notes
+
+The script guarantees that all selected criteria are satisfied before returning a password. It uses sequential character generation, so the password composition reflects the order in which characters were selected. If you need a different structure, additional refinements can be added.
